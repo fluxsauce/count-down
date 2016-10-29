@@ -24,7 +24,9 @@ Requires [Node.js](https://nodejs.org/) 6 or higher; includes a [Node Version Ma
 
 ## Development
 
-Visit http://editorconfig.org/ for instructions on how to configure your IDE or editor to use the included `.editorconfig` file.
+Visit [editorconfig.org](http://editorconfig.org/) for instructions on how to configure your IDE or editor to use the included `.editorconfig` file.
+
+Install [ESLint](http://eslint.org/) with the [Airbnb JavaScript rules](https://github.com/airbnb/javascript).
 
 ```bash
 npm i
