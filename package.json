@@ -1,0 +1,34 @@
+{
+  "name": "count-down",
+  "version": "1.0.0",
+  "description": "Utility for \"counting down\" numbers and strings.",
+  "main": "./count-down.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "bin": {
+    "count-down": "./count-down.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fluxsauce/count-down.git"
+  },
+  "keywords": [
+    "cli",
+    "utility"
+  ],
+  "devDependencies": {
+    "eslint": "^3.7.0",
+    "eslint-config-airbnb-base": "^9.0.0",
+    "eslint-plugin-import": "^2.0.1"
+  },
+  "author": "Jon Peck <jpeck@fluxsauce.com> (https://github.com/fluxsauce)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fluxsauce/count-down/issues"
+  },
+  "homepage": "https://github.com/fluxsauce/count-down#readme",
+  "engines": {
+    "node": ">=6"
+  }
+}
