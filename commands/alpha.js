@@ -12,8 +12,11 @@ module.exports = (value) => {
   const errors = [];
 
   // Validate input.
-  if (!validator.isALowercaseAsciiLetter(value)) {
-    errors.push('Value is not a lowercase ASCII character.');
+  if (!validator.lengthOne(value)) {
+    errors.push('Value is not a single character.');
+  }
+  else if (!validator.containsOnlyLowercaseAscii(value)) {
+    errors.push('Value should contain only lowercase letters.');
   }
 
   // Check if there are any errors.
