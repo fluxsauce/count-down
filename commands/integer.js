@@ -1,3 +1,4 @@
+const decreaser = require('../lib/decreaser');
 const validator = require('../lib/validator');
 
 /**
@@ -11,8 +12,8 @@ module.exports = (value) => {
   const errors = [];
 
   // Validate input.
-  if (!validator.isAPositiveInteger(value)) {
-    errors.push('Value is not a positive integer.');
+  if (!validator.isANonNegativeInteger(value)) {
+    errors.push('Value is not an integer greater-than or equal to 0.');
   }
 
   // Check if there are any errors.
@@ -21,7 +22,10 @@ module.exports = (value) => {
   }
 
   // Execute.
-  for (let working = value; working >= 0; working -= 1) {
+  let working = value;
+  console.log(working);
+  while (!validator.isZero(working)) {
+    working = decreaser.integer(working);
     console.log(working);
   }
 };

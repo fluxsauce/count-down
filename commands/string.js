@@ -27,7 +27,7 @@ module.exports = (value, startAtEnd) => {
   let working = value;
   console.log(working);
   while (!validator.isOnlyLowercaseA(working)) {
-    working = startAtEnd ? decreaser.gnirts(working) : decreaser.string(working);
+    working = decreaser.string(working, startAtEnd);
     console.log(working);
   }
 };
