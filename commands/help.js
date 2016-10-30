@@ -1,5 +1,7 @@
 /**
  * Render help.
+ *
+ * @returns {void}
  */
 module.exports = () => {
   const help = [
